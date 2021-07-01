@@ -26,3 +26,6 @@ jobs:
         run: |
           dd if=/dev/zero of=tempfile bs=1M count=11
           cat tempfile
+          
+      - name: Echo something
+        run: echo "something"
