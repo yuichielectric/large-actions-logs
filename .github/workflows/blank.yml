@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: Run a one-line script
         run: |
-          dd if=/dev/zero of=tempfile bs=1M count=11
+          dd if=/dev/zero of=tempfile bs=1M count=100
           cat tempfile
           
       - name: Echo something
