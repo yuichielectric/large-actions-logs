@@ -23,4 +23,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run a one-line script
-        run: dd if=/dev/zero of=tempfile bs=1M count=11
+        run: |
+          dd if=/dev/zero of=tempfile bs=1M count=11
+          cat tempfile
